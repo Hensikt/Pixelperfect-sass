@@ -1,0 +1,249 @@
+@import 'vars';
+/* Generale CSS */
+body{
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+ul{
+  grid-column: 2/4;
+  margin: $a .3em $a $a; /* Top, Right, Bottom, left */
+  text-decoration: $n;
+  display: inline;
+  font-weight: lighter;
+  text-align: right;
+  color: $w;
+}
+li{
+  list-style: $n;
+  display: inline-block;
+  margin-left: $em;
+}
+a{
+  text-decoration: $n;
+  color: #93D8ED;
+  margin: $a;
+}
+p{
+  font-weight: lighter;
+}
+
+/* Generale classes */
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  width: 1130px;
+  margin: $a;
+}
+.navbar{
+  display: grid;
+  width: 1130px;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 80px;
+  margin: $a;
+}
+.header{
+  display: grid;
+  background-image: url(../Album/slide-iddink1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  height: 300px;
+}
+.footer{
+  background-color: $back;
+  background-size: cover;
+}
+.fcontainer{
+  width: 1130px;
+  margin: $a;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3vw 3vw 3vw;
+  padding: $em;
+}
+.winactie{
+  background-color: #85BADF;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: $em;
+  margin: $em 0 $em 0;/* Top, Rigth, Bottom, Left */
+}
+.winactiecontainer{
+  width: 1130px;
+  margin: $a;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 8vw 8vw 8vw;
+}
+.center{
+  width: 1130px;
+  padding: .5em 0 $em 0; /* Top, Rigth, Bottom, Left */
+  margin: $a;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+/* Button classes */
+.Witrand{
+  margin: $a;
+  border: solid $w 2px;
+  border-radius: 5px;
+  height: 50px;
+  width: 140px;
+  font-size: 20px;
+  background-color: $back;
+  color: $w;
+  padding: .5em $em .5em $em; /* Top, Rigth, Bottom, Left */
+  grid-column: 2/4;
+}
+.Witrandm{
+  margin: $a;
+  border: solid $w 2px;
+  border-radius: 5px;
+  height: 35px;
+  width: 90px;
+  font-size: 15px;
+  background-color: $back;
+  color: $w;
+  grid-column: 2/4;
+}
+.bwinactie{
+  margin: $a $a $a 2.6em;
+  border: solid $w 2px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: $back;
+  color: $w;
+  padding: .5em $em .5em $em;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.bontdek{
+  margin: $a;
+  border: solid $w 2px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: $back;
+  color: $w;
+  padding: .5em $em .5em $em; /* Top, Rigth, Bottom, Left */
+  grid-column: 2/4;
+  font-weight: lighter;
+}
+.bregistreer{
+  font-weight: lighter;
+  margin: $a;
+  border: solid $w 2px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: $w;
+  color: #00bFE6;
+  padding: .5em $em .5em $em; /* Top, Rigth, Bottom, Left */
+  grid-column: 2/4;
+}
+
+/* subclasses */
+.navbar li a{
+  margin: $a;
+}
+ul.nav{
+  grid-column: 3/4;
+  margin: $a;
+}
+.center {
+  h2{
+    grid-column: 2/4;
+    font-weight: 900;
+    color: $back;
+  }
+ p{
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+}
+
+.container h3{
+  color: $back;
+}
+.header p{
+  font-size: 28px;
+  color: $w;
+  grid-column: 1/4;
+  margin: $a;
+}
+.Group{
+  margin: .5em;
+}
+.search{
+  float: right;
+}
+.Navlogo{
+  padding: $em;
+}
+.hersens{
+  margin: $a;
+}
+.logoWit{
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.ipadpijl{
+  grid-row: 3/5;
+  grid-column: 4/4;
+  margin-left: -80px;
+  margin-bottom: 10px;
+}
+.winactie{
+  p{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    color: $w;
+    margin: $a;
+  }
+  h3{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    color: $w;
+    margin: $a $a $a 1.5em;/* Top, Rigth, Bottom, Left */
+  }
+}
+
+.ipad{
+  grid-column: 1/3;
+  grid-row: 1/3;
+  margin: 2em $em 0 23.5em;/* Top, Rigth, Bottom, Left */
+}
+.manipad{
+  grid-column: 2/3;
+  grid-row: 1/4;
+  margin: $a;
+  padding: $a;
+}
+.mobile{
+  grid-column: 4/5;
+  grid-row: 1/4;
+  margin: $a 5em $a $a;
+}
+.fleft{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  color: $w;
+  font-size: 12px;
+}
+.fright{
+  grid-column: 3/4;
+  grid-row: 3/4;
+  color: $w;
+  text-align: right;
+  font-size: 14px;
+}
+.arrow-down{
+  float: right;
+  margin: .4em;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #00bFE6;
+}
